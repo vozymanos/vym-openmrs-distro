@@ -1,0 +1,45 @@
+<config>
+    <globalProperties>
+        <globalProperty>
+            <property>layout.name.format</property>
+            <value>latinamerica</value>
+        </globalProperty>
+        <globalProperty>
+            <property>layout.address.format</property>
+            <value>
+                <org.openmrs.layout.address.AddressTemplate>
+                    <nameMappings class="properties">
+                        <!-- address -->
+                        <property name="address1" value="Location.address1"/>
+                        <!-- barrio -->
+                        <property name="address2" value="Location.neighborhood"/>
+                        <!-- ciudad o parroquia -->
+                        <property name="cityVillage" value="Location.cityVillage"/>
+                        <!-- cantón -->
+                        <property name="countyDistrict" value="Location.district"/>
+                        <!-- provincia -->
+                        <property name="stateProvince" value="Location.stateProvince"/>
+                        <!-- pais -->
+                        <property name="country" value="Location.country"/>
+                    </nameMappings>
+                    <sizeMappings class="properties">
+                        <property name="address1" value="40"/>
+                        <property name="address2" value="40"/>
+                        <property name="cityVillage" value="60"/>
+                        <property name="countyDistrict" value="30"/>
+                        <property name="stateProvince" value="30"/>
+                        <property name="country" value="12"/>
+                    </sizeMappings>
+                    <lineByLineFormat>
+                        <string>address1</string>
+                        <string>address2</string>
+                        <string>cityVillage countyDistrict stateProvince country</string>
+                    </lineByLineFormat>
+                    <elementDefaults class="properties">
+                        <property name="country" value="Ecuador"/>
+                    </elementDefaults>
+                </org.openmrs.layout.address.AddressTemplate>
+            </value>
+        </globalProperty>
+    </globalProperties>
+</config>
