@@ -1,0 +1,20 @@
+{
+  "@openmrs/esm-styleguide": {
+    "Brand color #1": "#44b290",
+    "Brand color #2": "#0c3c60",
+    "Brand color #3": "#fc771c"
+  },
+  "@openmrs/esm-login-app": {
+    "logo": {
+      "src": "/openmrs/spa/media/images/logos/vym-logo.svg",
+      "alt": "VyM Logo"
+    }
+  },
+  "@openmrs/esm-primary-navigation-app": {
+    "logo": {
+      "src": "/openmrs/spa/media/images/logos/vym-logo-dark.svg",
+      "alt": "VyM Logo",
+      "name": "VyM"
+    }
+  }
+}
