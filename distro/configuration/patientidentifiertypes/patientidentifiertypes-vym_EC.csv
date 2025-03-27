@@ -1,7 +1,0 @@
-Uuid,Void/Retire,Name,Description,Required,Format,Format description,Validator,Location behavior,Uniqueness behavior,_order:6000
-05a29f94-c0ed-11e2-94be-8c13b969e334,,OpenMRS ID,"OpenMRS patient identifier, with check-digit",TRUE,,,org.openmrs.module.idgen.validator.LuhnMod30IdentifierValidator,NOT_USED,UNIQUE
-22348099-3873-459e-a32e-d93b17eda533,,Legacy ID,Identifier type to record optional previous identifers,FALSE,,,,NOT_USED,
-b4143563-16cd-4439-b288-f83d61670fc8,TRUE,ID Card,ID Card,,,,,,
-a71403f3-8584-4289-ab41-2b4e5570bd45,TRUE,SSN,Social Security Number,,,,,,
-bf81666c-5e62-4567-b1c0-71af016fc3f9,,Cédula,DNI del pais de Ecuador,FALSE,"(([0-1][0-9])|(2[0-4]))[0-9]{8}","10 dígitos",,,
-a184f867-1711-4821-8f89-199c6afa5f5e,,Pasaporte,Pasaporte de extranjero,FALSE,,,,NOT_USED,UNIQUE

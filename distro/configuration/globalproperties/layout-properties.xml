@@ -1,8 +1,0 @@
-<config>
-    <globalProperties>
-        <globalProperty>
-            <property>layout.name.format</property>
-            <value>latinamerica</value>
-        </globalProperty>
-    </globalProperties>
-</config>
