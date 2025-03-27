@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.openmrs.content</groupId>
+  <artifactId>vym-distro-content</artifactId>
+  <versioning>
+    <lastUpdated>20250326230454</lastUpdated>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0.0-SNAPSHOT</value>
+        <updated>20250326230454</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>zip</extension>
+        <value>1.0.0-SNAPSHOT</value>
+        <updated>20250326230454</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>1.0.0-SNAPSHOT</version>
+</metadata>

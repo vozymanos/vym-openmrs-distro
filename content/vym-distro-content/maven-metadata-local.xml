@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.openmrs.content</groupId>
+  <artifactId>vym-distro-content</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20250326230454</lastUpdated>
+  </versioning>
+</metadata>
