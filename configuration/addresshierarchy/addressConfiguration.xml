@@ -42,13 +42,14 @@
       <field>ADDRESS_1</field>
       <nameMapping>Location.address1</nameMapping>
       <sizeMapping>40</sizeMapping>
-      <requiredInHierarchy>true</requiredInHierarchy>
+      <requiredInHierarchy>false</requiredInHierarchy>
     </addressComponent>
   </addressComponents>
   <lineByLineFormat>
     <string>address1</string>
     <string>address2</string>
-    <string>cityVillage countyDistrict stateProvince country</string>
+    <string>cityVillage</string>
+    <string>countyDistrict stateProvince country</string>
   </lineByLineFormat>
   <addressHierarchyFile>
     <filename>addresshierarchy.ecuador.csv</filename>
