@@ -28,7 +28,7 @@
     <openmrs.version>2.7.2</openmrs.version>
     <initializer.version>2.9.0</initializer.version>
     <webservices.rest.version>2.49.0-SNAPSHOT</webservices.rest.version>
-    <addresshierarchy.version>2.20.0</addresshierarchy.version>
+    <addresshierarchy.version>2.21.0</addresshierarchy.version>
     <idgen.version>4.14.0</idgen.version>
     <legacyui.version>1.22.0</legacyui.version>
     <metadatamapping.version>1.6.0</metadatamapping.version>
@@ -133,12 +133,6 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>queue-omod</artifactId>
-      <version>${queue.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>org.bahmni.module</groupId>
       <artifactId>appointments-omod</artifactId>
       <version>${appointments.version}</version>
@@ -212,20 +206,8 @@
     </dependency>
     <dependency>
       <groupId>org.openmrs.module</groupId>
-      <artifactId>bedmanagement-omod</artifactId>
-      <version>${bedmanagement.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
       <artifactId>stockmanagement-omod</artifactId>
       <version>${stockmanagement.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>billing-omod</artifactId>
-      <version>${billing.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
