@@ -72,6 +72,13 @@
     ],
     "defaultPatientIdentifierTypes": [
       "bf81666c-5e62-4567-b1c0-71af016fc3f9"
-    ]
+    ],
+    "fieldConfigurations": {
+      "address": {
+        "useAddressHierarchy": {
+          "searchAddressByLevel": true
+        }
+      }
+    }
   }
 }
