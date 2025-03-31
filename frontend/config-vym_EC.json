@@ -80,5 +80,11 @@
         }
       }
     }
+  },
+  "@openmrs/esm-patient-chart-app": {
+    "logo": {
+      "src": "/openmrs/spa/media/images/logos/vym-logo.svg",
+      "alt": "VyM Logo"
+    }
   }
 }
