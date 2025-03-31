@@ -11,13 +11,11 @@ ARG MVN_ARGS="install"
 COPY pom.xml ./
 COPY distro ./distro/
 COPY content ./content/
-# special handling workaround for issue with addresshierarchy config...
-COPY configuration /openmrs/distribution/openmrs_config
 
 # Build the distro, but only deploy from the amd64 build
 RUN --mount=type=secret,id=m2settings,target=/usr/share/maven/ref/settings-docker.xml \
     --mount=type=cache,id=m2cache,target=/usr/share/maven/ref/repository \
-    cp -R ./content/* /usr/share/maven/ref/repository/ && \
+    cp -R ./content/* /usr/share/maven/ref/repository/org/openmrs/content/ && \
     if [[ "$MVN_ARGS" != "deploy" || "$(arch)" = "x86_64" ]]; \
     then mvn $MVN_ARGS_SETTINGS $MVN_ARGS; \
     else mvn $MVN_ARGS_SETTINGS install; \
@@ -46,3 +44,5 @@ COPY --from=dev /openmrs/distribution/openmrs-distro.properties /openmrs/distrib
 COPY --from=dev /openmrs/distribution/openmrs_modules /openmrs/distribution/openmrs_modules
 COPY --from=dev /openmrs/distribution/openmrs_owas /openmrs/distribution/openmrs_owas
 COPY --from=dev  /openmrs/distribution/openmrs_config /openmrs/distribution/openmrs_config
+# special handling workaround for issue with addresshierarchy config...
+COPY configuration /openmrs/distribution/openmrs_config/
