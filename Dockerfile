@@ -15,6 +15,7 @@ COPY content ./content/
 # Build the distro, but only deploy from the amd64 build
 RUN --mount=type=secret,id=m2settings,target=/usr/share/maven/ref/settings-docker.xml \
     --mount=type=cache,id=m2cache,target=/usr/share/maven/ref/repository \
+    mkdir -p /usr/share/maven/ref/repository/org/openmrs/content && \
     cp -R ./content/* /usr/share/maven/ref/repository/org/openmrs/content/ && \
     if [[ "$MVN_ARGS" != "deploy" || "$(arch)" = "x86_64" ]]; \
     then mvn $MVN_ARGS_SETTINGS $MVN_ARGS; \
