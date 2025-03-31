@@ -18,6 +18,58 @@
     }
   },
   "@openmrs/esm-patient-registration-app": {
+    "fieldDefinitions": [
+      {
+        "id": "ethnicity",
+        "name": "Ethnicity",
+        "type": "person attribute",
+        "uuid": "214984e4-b3ed-4ae2-b40a-91b781ba8be9",
+        "answerConceptSetUuid": "e7c6c8b6-ed15-4679-8d60-876080b0e15f",
+        "validation": {}
+      },
+      {
+        "id": "indigenous-nationality",
+        "name": "Indigenous Nationality",
+        "type": "person attribute",
+        "uuid": "07b64cc5-12e0-4eea-9938-886c17729ada",
+        "answerConceptSetUuid": "46924b76-634b-4d4b-833e-f2de0d6ced6f",
+        "validation": {}
+      },
+      {
+        "id": "sexuality",
+        "name": "Sexual Orientation",
+        "type": "person attribute",
+        "uuid": "3455a429-58ec-4e73-bd3e-f5ae32aad405",
+        "answerConceptSetUuid": "b1eb834b-cae3-4286-89d7-6a3f1e9eeab0",
+        "validation": {}
+      },
+      {
+        "id": "gender-identity",
+        "name": "Gender Identity",
+        "type": "person attribute",
+        "uuid": "2b68b87b-8f41-438c-abdf-e903bf00b373",
+        "answerConceptSetUuid": "6b5ee9a1-4d71-45f6-bb74-6c489bda25df",
+        "validation": {}
+      }
+    ],
+    "sectionDefinitions": [
+      {
+        "id": "additionalDetails",
+        "name": "Additional Details",
+        "fields": [
+          "ethnicity",
+          "indigenous-nationality",
+          "gender-identity",
+          "sexuality"
+        ]
+      }
+    ],
+    "sections": [
+      "demographics",
+      "contact",
+      "relationships",
+      "additionalDetails"
+    ],
     "defaultPatientIdentifierTypes": [
       "bf81666c-5e62-4567-b1c0-71af016fc3f9"
     ]
